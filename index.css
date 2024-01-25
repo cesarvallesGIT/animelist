@@ -18,8 +18,10 @@ body {
    width: 11rem;
    height: 100dvh;
    padding: 2rem 1.5rem;
-   border-right: solid rgba(255, 255, 255, 0.5) 3px;
-
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: -1px 1px 8px 1px #ffffff;
 }
 .logo {
     display: flex;
@@ -41,7 +43,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 3rem;
 }
 .nav-li {
     color: #383645;
@@ -73,4 +74,21 @@ body {
 }
 .nav-li:hover {
     color: white;
+}
+.profile-picture {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.profile-picture > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+.profile-picture > img:hover {
+    outline: solid white 3px;
 }
